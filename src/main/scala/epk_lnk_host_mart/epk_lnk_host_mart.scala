@@ -105,5 +105,5 @@ object epk_lnk_host_mart extends App {
     add IF NOT EXISTS
     partition (report_dt='$DATE_1M_xx_hdp')
   location '$outputHdfsTablePathNew'""")
-  
+
 }
