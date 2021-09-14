@@ -19,7 +19,7 @@ spark-submit \
 --conf spark.network.timeout=2400 \
 --conf spark.dynamicAllocation.executorIdleTimeout=2400 \
 --class epk_lnk_host_mart \
-${TARGET_JAR} \
+epk_lnk_host_mart.jar \
 --ds "2021-09" \
 --output-hdfs-table-path "hdfs://data/custom/rb/txn_aggr/pa/txn_aggr" \
 --output-hive-table-name "epk_lnk_host_id" \
